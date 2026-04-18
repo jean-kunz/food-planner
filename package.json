@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "WRANGLER_REGISTRY_PATH=./.wrangler/registry vite dev",
     "build": "vite build",
     "preview": "vite preview",
+    "preview:worker": "WRANGLER_REGISTRY_PATH=./.wrangler/registry vite build && WRANGLER_REGISTRY_PATH=./.wrangler/registry wrangler dev",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "prepare": "svelte-kit sync || echo ''"
