@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "WRANGLER_REGISTRY_PATH=./.wrangler/registry vite dev",
+    "dev:local": "WRANGLER_REGISTRY_PATH=./.wrangler/registry vite dev --mode local-supabase",
     "build": "vite build",
     "preview": "vite preview",
     "preview:worker": "WRANGLER_REGISTRY_PATH=./.wrangler/registry vite build && WRANGLER_REGISTRY_PATH=./.wrangler/registry wrangler dev",
