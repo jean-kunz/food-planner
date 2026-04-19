@@ -1,0 +1,7 @@
+{
+    "git.worktreeIncludeFiles": [
+        ".env",
+        ".env.local-supabase"
+    ],
+    "git.detectWorktrees": true
+}
